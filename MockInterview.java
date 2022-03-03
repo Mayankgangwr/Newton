@@ -1,6 +1,8 @@
+import java.io.*; \
+import java.util.*;
 class Mockinterview{
     public static void main(String args[]) {
-        int arr[] ={1,-3,-5,4,5,-2};
+               int arr[] ={1,-3,-5,4,5,-2};
 int size = arr.length;
 int index = 0;
 int aar[] = new int[size];
@@ -15,10 +17,9 @@ if(arr[i]>0){
         aar[index] = arr[j];
         index++;
      }
- }
- for(int k = 0; k<size; k++){
-     System.out.print(aar[k]+", ");
-             }
+ } 
+            System.out.print(Arrays.toString(aar));
+            System.out.println();
              int nwithoutrev =  123321;
              int n = nwithoutrev;
              int nrev = 0; 
@@ -29,24 +30,25 @@ if(arr[i]>0){
                  n = n/10;
              }
              if(nrev==nwithoutrev){
-             System.out.println("nrev");
+             System.out.println(nrev+" Is palindrome number.");
              }
-             int arr [] =  {12,34,2,4,5,7,34};
+             System.out.print("All The  prime numbers are -> ");
+             int arr1[] =  {12,34,2,4,5,7,34};
 
-             for(int i= 0; i<arr.length; i++)
+             for(int i= 0; i<arr1.length; i++)
              {
               int c = 0;
-              for(int j=2; j<arr[i]; j++){
-                  if(arr[i]%j==0){
+              for(int j=2; j<arr1[i]; j++){
+                  if(arr1[i]%j==0){
                 c++;
                   }
               }
               if(c==0){
-                 System.out.println(arr[i]);
+                 System.out.print(arr1[i]+", ");
                 }
               
              }
-      
-      
+             System.out.println();
+ 
    }  
 }
