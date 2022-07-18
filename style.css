@@ -1,0 +1,71 @@
+body, html{
+
+    height: 100%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.pic1,.pic2,.pic3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; /* parallax effect */
+}
+.pic1{
+    background-image: url("https://media.istockphoto.com/photos/new-york-city-nyc-usa-picture-id615398376?b=1&k=20&m=615398376&s=170667a&w=0&h=v59Pfuvn4jTqysv0RYKsYhoUM_ayitgQIsG8cFg3rM8=");
+    min-height:100%;
+    background-size: 100% 100%;
+}
+
+.pic2{
+    background-image: url("https://media.istockphoto.com/photos/san-francisco-skyline-with-oakland-bay-bridge-at-sunset-california-picture-id1136437406?b=1&k=20&m=1136437406&s=170667a&w=0&h=wkSwE70gUpdL_meD77l_HqgcxjfZkRE9WsPzUzMBHJ8=");
+    min-height: 400px;
+    background-size: 100%;
+}
+.pic3{
+    background-image: url("https://media.istockphoto.com/photos/night-photograph-of-complicated-intersecting-highway-picture-id1097184316?b=1&k=20&m=1097184316&s=170667a&w=0&h=ase_kRNUmc_2U3ONMsmo_817y-M5sTsUw25cbWyfto4=");
+    min-height: 400px;
+    background-size: 100%;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.sec-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.sec-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+}
+.ptext .border.transparent{
+    background-color: transparent;
+}
+
+
+@media(max-width: 568px){
+    .pic1, .pic2, .pic3{
+        background-attachment: scroll;  /* simple site */
+    }
+}
